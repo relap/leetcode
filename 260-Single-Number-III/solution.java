@@ -1,7 +1,6 @@
 public class Solution {
     public int[] singleNumber(int[] nums) {
         int result = 0;
-        int temp = 1;
         int count = 0;
         int[] singleNum = new int[] {0,0};
         if(nums.length<=2){
