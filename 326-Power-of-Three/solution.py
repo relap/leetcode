@@ -4,10 +4,7 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        if n%10 not in [1,3,7,9]:
-        	return False
+        if n>0 and 1162261467%n == 0:
+        	return True
         else:
-	        if n in [3**x for x in range(1000) if 3**x <= n]:
-	        	return True
-	        else:
-	        	return False
+        	return False
