@@ -4,9 +4,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n == 1:
-            return 1
-        if n == 2:
-            return 2
-        if n >= 3:
-            return self.climbStairs(n-1)+self.climbStairs(n-2)
+        a = 0
+        b = 1
+        sum = 0
+        for i in range(n):
+            sum = a + b
+            a = b
+            b = sum
+        return sum
+        
