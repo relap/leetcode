@@ -11,13 +11,13 @@ class Solution(object):
         """
         minn = 0
         maxn = n - 1
-        mid = (minn + maxn) /2
+        mid = (minn + maxn) /2 + 1
         while !(isBadVersion(mid) == True and isBadVersion(mid-1) == False):
         	if isBadVersion(mid) == True:
         		maxn = mid
-        		mid = (minn + maxn) /2
+        		mid = (minn + maxn) /2 +1
         	else:
         		minn = mid
-        		mid = (minn + maxn) /2
+        		mid = (minn + maxn) /2 +1
         return mid
         
