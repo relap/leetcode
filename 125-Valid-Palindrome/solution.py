@@ -5,10 +5,10 @@ class Solution(object):
         :rtype: bool
         """
         sl = s.lower()
-        sa = ''
+        sa = []
         for i in sl:
         	if i>='a' and i<='z' or i>='0' and i<='9':
-        		sa += i
+        		sa.append(i)
         strlen = len(sa)
 
         for i in range(0,strlen/2):
