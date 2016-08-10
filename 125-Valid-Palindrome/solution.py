@@ -11,7 +11,7 @@ class Solution(object):
         		sa += i
         strlen = len(sa)
 
-        if strlen %2 ==0:
-        	return sa[0:strlen/2] == sa[strlen/2:][::-1]
-        else:
-        	return sa[0:strlen/2+1] == sa[strlen/2:][::-1]
+        for i in range(0,strlen/2):
+        	if sa[i] != sa[strlen-1-i]:
+        		return False
+        return True
