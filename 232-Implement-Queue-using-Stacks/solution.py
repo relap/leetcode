@@ -31,4 +31,4 @@ class Queue(object):
         """
         :rtype: bool
         """
-        return !self.queue
+        return len(self.queue)==0
